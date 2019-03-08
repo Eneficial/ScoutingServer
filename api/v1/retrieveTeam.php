@@ -106,11 +106,7 @@ if (filesize($teamDataPath."/standScout.json")>0) {
 		else if ($json["Auto_DiscCargoShip"] == "Did not place") $json["Auto_DiscCargoShip"] = 1;
 		if ($json["Auto_DiscRocket"] == "Placed") $json["Auto_DiscRocket"] = 1;
 		else if ($json["Auto_DiscRocket"] == "Did not place") $json["Auto_DiscRocket"] = 1;
-		
-		if (!isSet($json["Auto_DropSwitch"])) {
-			$json["Teleop_DiscDrop"] = 0;
-			$json["Teleop_BallDrop"] = 0;
-		}
+
 		
         $matchData[$json["MatchNumber"]][] = $json;
 		$DiscCargoShip += $json["Auto_DiscCargoShip"] + $json["Teleop_DiscCargoPlace"];
