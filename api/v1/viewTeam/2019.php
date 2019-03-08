@@ -244,20 +244,18 @@ foreach ($result["Stand"]["Matches"] as $match) {
 		"<td>".returnCorrectTd("No Show by ".$processedMatch["TeamNumber"][0]." for Match ".$processedMatch["MatchNumber"][0],$processedMatch["Pre_NoShow"])."</td>".
 		"<td>".returnCorrectTd("Starting positions for ".$processedMatch["TeamNumber"][0]." for Match ".$processedMatch["MatchNumber"][0],$processedMatch["Pre_StartingPos"])."</td>".
 		"<td>".returnCorrectTd("Baseline crosses in Auto for ".$processedMatch["TeamNumber"][0]." for Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_CrossedBaseline"])."</td>".
-		"<td>".returnCorrectTd("Power Cube placed on Switch in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_PlaceSwitch"])."</td>".
-		"<td>".returnCorrectTd("Power Cube placed on Scale in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_PlaceScale"])."</td>".
-		"<td>".returnCorrectTd("Power Cube dropped while attempting Switch in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_DropSwitch"])."</td>".
-		"<td>".returnCorrectTd("Power Cube dropped while attempting Scale in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_DropScale"])."</td>".
+		"<td>".returnCorrectTd("Discs placed in Cargo Ship in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_DiscCargoShip"])."</td>".
+		"<td>".returnCorrectTd("Discs placed in Rocket in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_DiscRocket"])."</td>".
+		"<td>".returnCorrectTd("Balls placed in Cargo Ship in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_BallCargoShip"])."</td>".
+		"<td>".returnCorrectTd("Balls placed in Rocket in Auto by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_BallRocket"])."</td>".
 		"<td>".returnCorrectTd("Autonomous Notes for ".$processedMatch["TeamNumber"][0]." for Match ".$processedMatch["MatchNumber"][0],$processedMatch["Auto_Notes"])."</td>".
-		"<td>".returnCorrectTd("Switch visits in Teleop by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_SwitchPlace"])."</td>".
-		"<td>".returnCorrectTd("Scale visits in Teleop by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_ScalePlace"])."</td>".
-		"<td>".returnCorrectTd("Power Cubes dropped attempting Switch in Teleop by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_SwitchDrop"])."</td>".
-		"<td>".returnCorrectTd("Power Cubes dropped attempting Scale in Teleop by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_ScaleDrop"])."</td>".
-		"<td>".returnCorrectTd("Exchange Zone Visits by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_ExchangeVisit"])."</td>".
+		"<td>".returnCorrectTd("Discs placed in Cargo Ship in TeleOp by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_DiscCargoPlace"])."</td>".
+		"<td>".returnCorrectTd("Discs placed in Rocket in TeleOp by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_DiscRocketPlace"])."</td>".
+		"<td>".returnCorrectTd("Balls placed in Cargo Ship in TeleOp by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_BallCargoPlace"])."</td>".
+		"<td>".returnCorrectTd("Balls placed in Rocket in TeleOp by ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_BallRocketPlace"])."</td>".
+		"<td>".returnCorrectTd("Discs Dropped ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_DiscDrop"])."</td>".
+		"<td>".returnCorrectTd("Balls Dropped ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_BallDrop"])."</td>".
 		"<td>".returnCorrectTd("Teleop Notes for ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_Notes"])."</td>".
-		"<td>".returnCorrectTd("Boost used by ".$processedMatch["TeamNumber"][0]."\'s alliance in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_BoostUsed"])."</td>".
-		"<td>".returnCorrectTd("Force used by ".$processedMatch["TeamNumber"][0]."\'s alliance in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_ForceUsed"])."</td>".
-		"<td>".returnCorrectTd("Levitate used by ".$processedMatch["TeamNumber"][0]."\'s alliance in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Teleop_LevitateUsed"])."</td>".
 		"<td>".returnCorrectTd("Climb status for ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Post_Climb"])."</td>".
 		"<td>".returnCorrectTd("DOFs for ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["DOF"])."</td>".
 		"<td>".returnCorrectTd("General Notes for ".$processedMatch["TeamNumber"][0]." in Match ".$processedMatch["MatchNumber"][0],$processedMatch["Notes"])."</td>".
