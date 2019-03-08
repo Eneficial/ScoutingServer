@@ -84,11 +84,13 @@ if (filesize($teamDataPath."/pitScout.json")>0) {
 if (filesize($teamDataPath."/standScout.json")>0) {
 	$file = fopen($teamDataPath."/standScout.json","r");
 	$rawLine = explode("\n",fread ($file,filesize($teamDataPath."/standScout.json")));
-	$LowPlace = 0;
-	$HighPlace = 0;
-	$LowDrop = 0;
-	$HighDrop = 0;
-    $Exchange = 0;
+	$DiscCargoShip = 0;
+	$DiscRocket = 0;
+	$BallCargoShip = 0;
+	$BallRocket = 0;
+	
+	$DiscDrop = 0;
+	$BallDrop = 0;
     $matchData = array();
 	foreach($rawLine as $line) {
         $json = json_decode($line,true);
