@@ -117,8 +117,8 @@ if (filesize($teamDataPath."/standScout.json")>0) {
 		$BallCargoShip += $json["Auto_BallCargoShip"] + $json["Teleop_BallCargoShipPlace"];
 		$BallRocket += $json["Auto_BallRocket"] + $json["Teleop_BallRocketPlace"];
 		
-		$DiscDrop += $json[ $json["Teleop_DiscDrop"];
-		$BallDrop += $json[$json["Teleop_BallDrop"];
+		$DiscDrop += $json["Teleop_DiscDrop"];
+		$BallDrop += $json["Teleop_BallDrop"];
         
     }
     $data["Stand"] = array(
