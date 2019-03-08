@@ -113,7 +113,7 @@ if (filesize($teamDataPath."/standScout.json")>0) {
 		}
 		
         $matchData[$json["MatchNumber"]][] = $json;
-		$DiscCargoShip += $json["Auto_DiscCargo"] + $json["Teleop_DiscCargoPlace"];
+		$DiscCargoShip += $json["Auto_DiscCargoShip"] + $json["Teleop_DiscCargoPlace"];
 		$DiscRocket += $json["Auto_DiscRocket"] + $json["Teleop_DiscRocketPlace"];
 		
 		$BallCargoShip += $json["Auto_BallCargoShip"] + $json["Teleop_BallCargoPlace"];
