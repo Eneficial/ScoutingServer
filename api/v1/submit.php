@@ -32,9 +32,6 @@ $expectedFormInputStand = array(
 	"Notes",
 	"Pre_NoShow",
 	"MatchNumber",
-	"Teleop_DiscDrop",
-	"Teleop_BallDrop",
-	"Post_Climb",
 	"DOF",
 );
 
