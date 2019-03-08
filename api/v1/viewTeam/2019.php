@@ -209,9 +209,9 @@ function openWindow2Description(type, description1, description2) {
 <tr><td>Additional Autonomous Notes:</td><td colspan="2"><?php echo $result["Pit"]["Auto_Notes"]; ?></td></tr>
 
 <tr><td>Discs in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscCSPlaces"]; ?></td></tr>
-<tr><td>Discs in Rocket:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgBallCSPlaces"]; ?></td></tr>
-<tr><td>Balls in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscRPlaces"]; ?></td></tr>
-<tr><td>Balls in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscRPlaces"]; ?></td></tr>
+<tr><td>Discs in Rocket:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscRPlaces"]; ?></td></tr>
+<tr><td>Balls in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgBallCSPlaces"]; ?></td></tr>
+<tr><td>Balls in Rocket:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgBallRPlaces"]; ?></td></tr>
 	
 <tr><td>Disc drops per match:</td><td>Pit: N/A</td><td>Average: <?php echo $result["Stand"]["AvgDiscDrops"]; ?></td></tr>
 <tr><td>Ball drops per match:</td><td>Pit: N/A</td><td>Average: <?php echo $result["Stand"]["AvgBallDrops"]; ?></td></tr>
