@@ -208,10 +208,10 @@ function openWindow2Description(type, description1, description2) {
 <tr><td>Autonomous:</td><td>Pit: Baseline: <?php echo $result["Pit"]["Auto_CrossedBaseline"]; ?><br/>Score at Switch: <?php echo $result["Pit"]["Auto_PlaceSwitch"]; ?><br/>Score at Scale: <?php echo $result["Pit"]["Auto_PlaceScale"]; ?></td><td>Average: See table below</td></tr>
 <tr><td>Additional Autonomous Notes:</td><td colspan="2"><?php echo $result["Pit"]["Auto_Notes"]; ?></td></tr>
 
-<tr><td>Discs in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscCSPlaces"]; ?></td></tr>
-<tr><td>Discs in Rocket:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscRPlaces"]; ?></td></tr>
-<tr><td>Balls in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgBallCSPlaces"]; ?></td></tr>
-<tr><td>Balls in Rocket:</td><td>Pit: <?php echo $result["Pit"]["Teleop_SwitchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgBallRPlaces"]; ?></td></tr>
+<tr><td>Discs in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_HatchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscCSPlaces"]; ?></td></tr>
+<tr><td>Discs in Rocket:</td><td>Pit: <?php echo $result["Pit"]["Teleop_HatchPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgDiscRPlaces"]; ?></td></tr>
+<tr><td>Balls in Cargo Ship:</td><td>Pit: <?php echo $result["Pit"]["Teleop_CargoPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgBallCSPlaces"]; ?></td></tr>
+<tr><td>Balls in Rocket:</td><td>Pit: <?php echo $result["Pit"]["Teleop_CargoPlace"]; ?></td><td>Average: <?php echo $result["Stand"]["AvgBallRPlaces"]; ?></td></tr>
 	
 <tr><td>Disc drops per match:</td><td>Pit: N/A</td><td>Average: <?php echo $result["Stand"]["AvgDiscDrops"]; ?></td></tr>
 <tr><td>Ball drops per match:</td><td>Pit: N/A</td><td>Average: <?php echo $result["Stand"]["AvgBallDrops"]; ?></td></tr>
