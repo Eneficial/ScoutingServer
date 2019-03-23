@@ -37,13 +37,13 @@ $expectedFormInputStand = array(
 
 $expectedFormInputPit = array(
 	
-	"Pre_StartingPos"	
-	"Auto_LevelStart1"
-	"Auto_LevelStart2"
-	"Auto_PlaceHatch"
-	"Auto_PlaceCargo"
-	"Teleop_CargoPlace"
-	"Teleop_HatchPlace"
+	"Pre_StartingPos",	
+	"Auto_LevelStart1",
+	"Auto_LevelStart2",
+	"Auto_PlaceHatch",
+	"Auto_PlaceCargo",
+	"Teleop_CargoPlace",
+	"Teleop_HatchPlace",
 	"RobotNotes",
 	"Strategy_General",
 );
