@@ -63,17 +63,15 @@ if (filesize($teamDataPath."/pitScout.json")>0) {
 } else {
 	$data["Pit"] = array(
 		"Pre_StartingPos" => "Unknown",	
-		"Auto_CrossedBaseline" => "Unknown",
+		"Auto_LevelStart1" => "Unknown",
+		"Auto_LevelStart2" => "Unknown",
 		"Auto_Notes" => "Unknown",
-		"Auto_PlaceSwitch" => "Unknown",
-		"Auto_PlaceScale" => "Unknown",
-		"Teleop_ScalePlace" => "Unknown",
-		"Teleop_SwitchPlace" => "Unknown",
-		"Teleop_ExchangeVisit" => "Unknown",
+		"Auto_PlaceHatch" => "Unknown",
+		"Auto_PlaceCargo" => "Unknown",
+		"Teleop_CargoPlace" => "Unknown",
+		"Teleop_HatchPlace" => "Unknown",
 		"Teleop_Notes" => "Unknown",
 		"RobotNotes" => "Unknown",
-		"Teleop_Climb" => "Unknown",
-		"Strategy_PowerUp" => "Unknown",
 		"Strategy_General" => "Unknown",
     );
     if ($showHiddenData) {
