@@ -5,8 +5,15 @@ $expectedFormInputCommon = array(
 	"ScouterName",
 	"ScouterTeamNumber",
 	"EventKey",
-	"TeamNumber",
-	"Pre_StartingPos",	
+	"TeamNumber",	
+	"Teleop_Notes",
+);
+
+$expectedFormInputStand = array(
+	"Notes",
+	"Pre_NoShow",
+	"MatchNumber",
+	"DOF",
 	"Auto_CrossedBaseline",
 	"Auto_Notes",
 	"Auto_Level1",
@@ -25,19 +32,10 @@ $expectedFormInputCommon = array(
 	"Teleop_Level2",
 	"Teleop_Level3",
 	"Teleop_PartnerAssisted",
-	"Teleop_Notes",
-);
-
-$expectedFormInputStand = array(
-	"Notes",
-	"Pre_NoShow",
-	"MatchNumber",
-	"DOF",
 );
 
 $expectedFormInputPit = array(
-	
-	"Pre_StartingPos",	
+		
 	"Auto_LevelStart1",
 	"Auto_LevelStart2",
 	"Auto_PlaceHatch",
