@@ -56,7 +56,7 @@ if (isSet($_POST["App"])) {
 				exit;
 				}
 		} else {
-			http_response_code(400);
+			http_response_code(401);
 			exit;
 		}
 	}
@@ -80,11 +80,11 @@ if (isSet($_POST["App"])) {
 				if (seralizeString($_POST[$input]) !== false) {
 					$dataArray[$input] = seralizeString($_POST[$input]);
 			} else {
-				http_response_code(400);
+				http_response_code(402);
 				exit;
 				}
 		} else {
-			http_response_code(400);
+			http_response_code(403);
 			exit;
 		}
 		}
@@ -94,16 +94,16 @@ if (isSet($_POST["App"])) {
 				if (seralizeString($_POST[$input]) !== false) {
 					$dataArray[$input] = seralizeString($_POST[$input]);
 			} else {
-				http_response_code(400);
+				http_response_code(404);
 				exit;
 				}
 		} else {
-			http_response_code(400);
+			http_response_code(405);
 			exit;
 		}
 		}
 	} else {
-		http_response_code(400);
+		http_response_code(406);
 		exit;
 	}
 
@@ -118,7 +118,7 @@ if (isSet($_POST["App"])) {
 		if ($lines !== false) {
 			foreach($lines as $line) {
 				if ($lineToAppend == $line) {
-					http_response_code(400);
+					http_response_code(407);
 					exit;
 				}
 			}
@@ -129,7 +129,7 @@ if (isSet($_POST["App"])) {
 		if ($lines !== false) {
 			foreach($lines as $line) {
 				if ($lineToAppend == $line) {
-					http_response_code(400);
+					http_response_code(408);
 					exit;
 				}
 			}
@@ -156,7 +156,7 @@ function getOrCreateTeamFolder($teamNumber, $eventCode) {
 				fclose($newFile);
 			}
 		} else {
-			http_response_code(400);
+			http_response_code(409);
 		}
 	}
 	return $path."/";
