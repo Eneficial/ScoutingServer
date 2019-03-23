@@ -71,7 +71,7 @@ if (isSet($_POST["App"])) {
 	$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 	curl_close($ch);
 	if ($httpCode != 200) {
-		http_response_code(400);
+		http_response_code(412);
 		exit;
 	}
 		if ($_POST["App"] == "stand") {
@@ -142,7 +142,7 @@ if (isSet($_POST["App"])) {
 	echo $lineToAppend;
 	
 } else {
-	http_response_code(400);
+	http_response_code(413);
 	exit;
 }
 
